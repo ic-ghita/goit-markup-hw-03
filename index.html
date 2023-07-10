@@ -10,28 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="header">
+  <body class="container">
+    <header class="global-header">
       <a class="logo" href="index.html"> <span class="web">Web</span>Studio </a>
       <nav class="navigation">
-        <ul class="list">
+        <ul>
           <li><a class="link" href="index.html">Studio</a></li>
           <li><a class="link" href="portfolio.html">Portfolio</a></li>
           <li><a class="link" href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="link" href="tel:+1212-772-4150">+1 212-772-4150</a>
+      <div class="contact-data">
+        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link" href="tel:+1212-772-4150">+1 212-772-4150</a>
+      </div>
     </header>
     <main>
       <section class="service-request-section">
-        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <h1>
+          EFFECTIVE SOLUTIONS FOR <br />
+          YOUR BUSINESS
+        </h1>
         <button class="button">Request our service</button>
       </section>
-      <section>
-        <div>
+      <section class="paragraph-section">
+        <div class="images-section">
           <h3 class="paragraph-title">ATTENTION TO DETAILS</h3>
           <p class="paragraph-description">
             We go into all the details and processes of your business to develop
@@ -59,85 +72,102 @@
             simplify work processes.
           </p>
         </div>
-        <h2 class="title">What we do</h2>
-        <img src="images/coding.jpg" alt="Coding" width="370" height="294" />
-        <img
-          src="images/mobile-app-development.jpg"
-          alt="Mobile app development"
-          width="370"
-          height="294"
-        />
-        <img
-          src="images/color-palette.jpg"
-          alt="Color palette"
-          width="370"
-          height="294"
-        />
       </section>
-      <section>
+      <section class="what-we-do">
+        <h2 class="title">What we do</h2>
+        <ul>
+          <li>
+            <img
+              src="images/coding.jpg"
+              alt="Coding"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="images/mobile-app-development.jpg"
+              alt="Mobile app development"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="images/color-palette.jpg"
+              alt="Color palette"
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="our-team">
         <h2 class="title">Our Team</h2>
-        <div>
-          <img
-            src="images/christopher-walker.jpg"
-            alt="Christopher Walker"
-            width="270"
-            height="260"
-          />
-          <br />
-          <span class="name">Christopher Walker</span>
-          <br />
-          <span class="job-title">Product Designer</span>
-        </div>
-        <div>
-          <img
-            src="images/kylie-evans.jpg"
-            alt=" Kylie Evans"
-            width="270"
-            height="260"
-          />
-          <br />
-          <span class="name">Kylie Evans</span>
-          <br />
-          <span class="job-title">Frontend Developer</span>
-        </div>
-        <div>
-          <img
-            src="images/ryan-harris.jpg"
-            alt="Ryan Harris"
-            width="270"
-            height="260"
-          />
-          <br />
-          <span class="name">Ryan Harris</span>
-          <br />
-          <span class="job-title">Marketing</span>
-        </div>
-        <div>
-          <img
-            src="images/tyler-moore.jpg"
-            alt="Tyler Moore"
-            width="270"
-            height="260"
-          />
-          <br />
-          <span class="name">Tyler Moore</span>
-          <br />
-          <span class="job-title">UI Designer</span>
-        </div>
+        <ul>
+          <li>
+            <img
+              src="images/christopher-walker.jpg"
+              alt="Christopher Walker"
+              width="270"
+              height="260"
+            />
+            <br />
+            <span class="name">Christopher Walker</span>
+            <br />
+            <span class="job-title">Product Designer</span>
+          </li>
+          <li>
+            <img
+              src="images/kylie-evans.jpg"
+              alt=" Kylie Evans"
+              width="270"
+              height="260"
+            />
+            <br />
+            <span class="name">Kylie Evans</span>
+            <br />
+            <span class="job-title">Frontend Developer</span>
+          </li>
+          <li>
+            <img
+              src="images/ryan-harris.jpg"
+              alt="Ryan Harris"
+              width="270"
+              height="260"
+            />
+            <br />
+            <span class="name">Ryan Harris</span>
+            <br />
+            <span class="job-title">Marketing</span>
+          </li>
+          <li>
+            <img
+              src="images/tyler-moore.jpg"
+              alt="Tyler Moore"
+              width="270"
+              height="260"
+            />
+            <br />
+            <span class="name">Tyler Moore</span>
+            <br />
+            <span class="job-title">UI Designer</span>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
       <a class="logo" href="index.html">
-        <span class="web">Web</span> <span class="studio">Studio</span>
+        <span class="web">Web</span><span class="studio">Studio</span>
       </a>
       <address class="address">695 Park Ave, NY 10065, USA</address>
-      <address>
+      <div class="footer-contact">
         <a class="contact" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
         <br />
         <a class="contact" href="tel:+1212-772-4150">+1 212-772-4150</a>
-      </address>
+      </div>
     </footer>
   </body>
 </html>
