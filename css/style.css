@@ -84,9 +84,6 @@ ul {
   width: 100%;
 }
 
-.group1 {
-}
-
 .button {
   color: #fff;
   font-size: 16px;
@@ -175,18 +172,12 @@ ul {
 
 .portfolio-images {
   display: flex;
-  align-items: center;
-}
-
-.portfolio-images ul {
-  width: 1270px;
-  display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
+  padding-left: 0;
 }
 
-.portfolio-images .img-box {
-  padding-left: 30px;
+.img-box {
+  flex-basis: 33.333333%;
 }
 
 .paragraph-title {
