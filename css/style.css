@@ -22,24 +22,28 @@ body {
   margin: 0 auto;
 }
 
+a.global-header {
+  padding-right: 93px;
+}
+
 .global-header {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding-left: 215px;
 }
 
 .global-header .navigation ul {
   display: flex;
-  justify-content: space-evenly;
-  width: 720px;
   align-items: center;
+  gap: 50px;
+  padding-right: 366px;
 }
 
 .global-header .contact-data {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
+  padding-right: 215px;
+  gap: 40px;
 }
 
 .logo {
@@ -62,6 +66,7 @@ body {
   font-weight: 500;
   line-height: 1em;
   letter-spacing: 0.02em;
+  padding-left: 93px;
 }
 
 ul {
@@ -69,8 +74,10 @@ ul {
 }
 
 .service-request-section h1 {
-  display: flex;
-  justify-content: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  padding: 200px 452px 0 452px;
 }
 
 .service-request-section {
@@ -82,6 +89,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   width: 100%;
+  padding-bottom: 200px;
 }
 
 .button {
@@ -92,6 +100,9 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   background-color: var(--active-color);
+  width: 200px;
+  padding: 10px 0 10px 0;
+  border-radius: 4px;
 }
 
 .portfolio-button {
@@ -103,13 +114,15 @@ ul {
   text-align: center;
   margin-left: 8px;
   margin-right: 8px;
-
   background-color: #f5f4fa;
+  border-radius: 4px;
+  border-style: none;
+  padding: 6px 22px 6px 22px;
 }
 .portfolio-buttons ul {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -136,13 +149,21 @@ ul {
 }
 
 .paragraph-section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  padding-right: 215px;
+  gap: 30px;
   display: flex;
+  padding-top: 94px;
   box-sizing: content-box;
   width: 100%;
   align-items: center;
+  justify-content: center;
+}
+
+.paragraph-section div {
+  width: 270px;
+}
+
+.paragraph-section div p {
+  padding-top: 10px;
 }
 
 .what-we-do {
@@ -150,11 +171,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .what-we-do ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 1200px;
 }
 
@@ -162,22 +185,44 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .our-team ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 1200px;
+  padding-bottom: 94px;
 }
 
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  padding-bottom: 94px;
+}
+
+.our-team-names {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .img-box {
-  flex-basis: 33.333333%;
+  display: flex;
+  flex-basis: calc(33.33% - 30px);
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.img-box div {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
 }
 
 .paragraph-title {
@@ -225,12 +270,13 @@ ul {
 }
 
 .image-title {
-  color: var(--heading-color);
+  color: #212121;
+  font-family: Roboto;
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 2.25em;
-  letter-spacing: 0.06em;
-  text-align: left;
+  line-height: 36px;
+  letter-spacing: 1.08px;
 }
 
 .image-description {
@@ -247,11 +293,8 @@ ul {
 
 .footer {
   padding-top: 60px;
-  display: flex;
-  flex-direction: column;
   background-color: var(--footer-background);
   color: #fff;
-  width: 100%;
   padding-left: 215px;
   padding-bottom: 60px;
 }
