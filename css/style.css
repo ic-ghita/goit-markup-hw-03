@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .global-header {
