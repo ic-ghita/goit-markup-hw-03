@@ -133,6 +133,7 @@ ul {
 .portfolio-button:hover {
   background-color: var(--active-color);
   color: white;
+  cursor: pointer;
 }
 
 .link {
@@ -291,13 +292,21 @@ ul {
   display: flex;
 }
 
-.footer {
-  padding-top: 60px;
-  background-color: var(--footer-background);
-  color: #fff;
-  padding-left: 215px;
-  padding-bottom: 60px;
+.container-footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  background-color: var(--footer-background);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #fff;
 }
 
 .studio {
