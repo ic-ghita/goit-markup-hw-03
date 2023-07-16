@@ -126,10 +126,6 @@ ul {
   padding-bottom: 50px;
 }
 
-.portfolio-content {
-  display: flex;
-}
-
 .portfolio-button:hover {
   background-color: var(--active-color);
   color: white;
@@ -201,9 +197,16 @@ ul {
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0;
-  padding-bottom: 94px;
+  gap: 30px;
+  padding-left: 215px;
+  margin-bottom: 94px;
+}
+
+.img-box div {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  padding: 20px 24px 20px 24px;
 }
 
 .our-team-names {
@@ -212,19 +215,6 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #fff;
-}
-
-.img-box {
-  display: flex;
-  flex-basis: calc(33.33% - 60px);
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-.img-box div {
-  display: flex;
-  flex-direction: column;
-  width: 370px;
 }
 
 .paragraph-title {
